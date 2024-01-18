@@ -37,7 +37,7 @@ body {
 
 /* FOR HEADER */
 
-.header {
+header {
     position: fixed;
     top: 0;
     z-index: 100;
@@ -73,6 +73,7 @@ input {
     width: 300px;
     height: 30px;
     font-size: 12px;
+    background-color: transparent;
 }
 
 .header-search :hover {
@@ -188,7 +189,7 @@ input {
 }
 
 #content-button:hover {
-    border: 1px solid #6098FF;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.4) 0%, rgba(225, 255, 255, 0.2) 100%);
 }
 
 

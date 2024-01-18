@@ -4,6 +4,7 @@
 
 /* main content */
 /* USE GRID */
+/* USE OVERFLOW */
 
 h2 {
     font-family: "Nanum Myeongjo", serif;
@@ -46,6 +47,8 @@ h2 {
     object-fit: cover;
     overflow: hidden;
 }
+
+/* Pseudo-classes */
 
 .recipes-content-inside:hover {
     cursor: pointer;

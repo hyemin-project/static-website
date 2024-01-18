@@ -12,7 +12,7 @@
 <body>
     <div class="wrap">
 
-        <div class="header">
+        <header>
             <div class="top-box">
                 <span class="header-search">
                     <a href="#"><img src="../assets/icons/search.png" /></a>
@@ -37,9 +37,9 @@
                     <a href="#" id="nav-active">CONTACT</a>
                 </span>
             </div>
-        </div>
+        </header>
 
-        
+       
         <div class="contact-main">
             <div id="contact-background-img">
                 <div id="contact-content">
@@ -52,22 +52,24 @@
                     <p>
                         CONTACT@MIKAELAREUBEN.COM
                     </p>
+                    <form action>
                     <div class="contact"> 
                         <div>Name</div>
                         <input type="text" name="name">
                         <div>Email *</div>
-                        <input type="email" name="email">
+                        <input type="email" name="email" required>
                         <div>Subject</div>
                         <input type="text" name="subject">
                         <div>Leave a message</div>
                         <input type="text" name="message">
-                        <button id="email-button">SUBSCRIBE</button>
+                        <button type="submit" id="email-button">SUBSCRIBE</button>
                     </div>
+                    </form>
                 </div>
             </div>
         </div>
-
-
+        
+        
         <footer class="footer">
             <div id="footer1">
                 <span><a href="./contact.html">CONTACT ></a></span>
