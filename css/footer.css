@@ -1,0 +1,92 @@
+/* footer */
+footer {
+    margin-top: auto;
+    height: 500px;
+}
+
+#footer1 {
+    height: 50%;
+    width: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: stretch;
+    flex-wrap: wrap;
+    background-image: url(../assets/images/vegies-dark.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#footer1 span {
+    flex: 1 1 30%;
+    text-align: center;
+}
+
+#footer1 span a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-icons a img {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+
+
+#footer2 {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color: #D8CEC0;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#footer2 div {
+    flex: 1 1 35%;
+}
+
+#footer2>div:nth-child(1) {
+    text-align: right;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-right: 20px;
+}
+
+#footer2>div:nth-child(2) input {
+    width: 70%;
+    border-width: 0px 0px 1px 0px;
+    padding: 5px;
+    font-size: 12px;
+    background-color: transparent;
+    margin: 5px 0px;
+}
+
+#footer2>div:nth-child(2) button {
+    background-color: transparent;
+    border: 0;
+    width: 100%;
+    cursor: pointer;
+    height: 10px;
+    font-size: 12px;
+    text-align: left;
+}
+
+#footer2>div:nth-child(3) {
+    text-align: center;
+}
+
+#footer2>div:nth-child(2) button:hover {
+    color: darkslategray;
+}
+
+#footer2>div:nth-child(2) button:active {
+    color: cornflowerblue;
+}

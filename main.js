@@ -16,11 +16,10 @@ const logo = document.querySelector(".logo");
 
 const scroll = () => {
   if (window.scrollY !== 0){
-    setTimeout(() =>{
-      window.scrollTo(0, window.scrollY - 50);
-      scroll();
-    }, 10);
+    const scrollPosition = document.querySelector('.header').offsetTop;
+    window.scrollTo({ top: scrollPosition, behavior: 'smooth' });
   }
 }
 
 logo.addEventListener('click',scroll);
+

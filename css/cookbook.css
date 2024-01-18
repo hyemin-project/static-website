@@ -1,0 +1,72 @@
+/* import custom Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* input outline basic style  */
+input {
+    outline: none;
+}
+
+/* main content */
+/* USE FLOAT */
+
+h2 {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 23px;
+}
+
+.cookbook-main {
+    margin-top: 130px;
+    padding: 5rem 15rem;
+    height: 600px;
+}
+
+#cookbook-content {
+    float: left;
+    width: 300px;
+    background-color: #FAF4EB;
+    padding: 5%;
+    align-content: center;
+}
+
+#cookbook-content p {
+    margin: 2rem 0;
+    font-size: 15px;
+    line-height: 2.5rem;
+}
+
+.cookbook-main img{
+    float: right;
+    width: 60%;
+    vertical-align: top;
+    height: 100%;
+    object-fit: cover;
+    object-position: right top;
+}
+
+.cookbook-email {
+    width: 85%;
+    font-size: 11px;
+}
+
+.cookbook-email input {
+    width: 100%;
+    border-width: 0px 0px 1px 0px;
+    padding: 10px;
+    font-size: 13px;
+}
+
+.cookbook-email input:active {
+    width: 100%;
+    border-width: 0px 0px 1px 0px;
+}
+
+#email-button {
+    background-color: transparent;
+    border: 0;
+    width: 100%;
+    cursor: pointer;
+    height: 30px;
+}

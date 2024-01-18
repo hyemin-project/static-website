@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width>, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/videos.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
 
     <title>ABOUT</title>
 </head>
@@ -31,34 +33,36 @@
                 <span class="logo"><a href="../index.html">Mikacla Reuben</a></span>
                 <span class="menu">
                     <a href="./cookbook.html">COOKBOOK</a>
-                    <a href="./press.html">PRESS</a>
+                    <a href="./about.html#press">PRESS</a>
                     <a href="./contact.html">CONTACT</a>
                 </span>
             </div>
         </div>
 
         
-        <div class="about-main">
-            <div id="about-content">
-                <h2>
-                    MEET MIKAELA
-                </h2>
-                <p>
-                    Mikaela’s background in kinesiology combined with a lifetime of holistic healing practice gives her the unique ability to empower people, adding in striking balance and harmony within the mindbody. It’s not just about food and exercise; Mikaela uses human connection to intuitively meet her client’s needs.
-                </p>
-                <p>
-                    Mikaela’s philosophy is rooted in biodiversity; the understanding that each body has unique needs and must follow a personal path to optimal health. If happiness starts in the body, then food must be the key. Whether it’s in the form of food, love, or experiences, the choice of what we use to fuel ourselves with will affect who we are and how we grow into our healthiest and truest selves.
-                </p>
+        <!-- <div class="videos-main">
+            <div id="videos-content">
+                <video muted loop id="videos-video">
+                    <source src="../assets/videos/woman.mp4" type="video/mp4">
+                    <strong>Your browser does not support the video tag.</strong>
+                </video>
+                <button id="videos-play-btn">▶ play video</button>
             </div>
-            <img src="../assets/images/woman-model.jpg" />
+        </div> -->
+
+        <div class="videos-main">
+            <div id="videos-content">
+                <iframe width="560" height="600" id="ytVideo" src="https://www.youtube.com/embed/4wf3c9v9znI?si=ZkJt5kz9u2NB9BxM&amp;controls=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <button id="videos-play-btn">▶ play video</button>
+            </div>
         </div>
 
 
         <footer class="footer">
             <div id="footer1">
-                <span><a href="#">CONTACT ></a></span>
-                <span><a href="#">ABOUT MIKAELA ></a></span>
-                <span><a href="#">IRE MIKAELA ></a></span>
+                <span><a href="./contact.html">CONTACT ></a></span>
+                <span><a href="./about.html">ABOUT MIKAELA ></a></span>
+                <span><a href="./contact.html">HIRE MIKAELA ></a></span>
                 <span class="footer-icons">
                     <a href="#"><img src="../assets/icons/insta_white.png" /></a>
                     <a href="#"><img src="../assets/icons/facebook_white.png" /></a>
@@ -79,5 +83,6 @@
         </footer>
 
     </div>
+    <script type="text/javascript" src="../pages.js"></script>
 </body>
 </html>

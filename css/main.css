@@ -15,17 +15,19 @@
 
 html,
 body {
-	height: 100%;
+    height: 100%;
     font-size: 12px;
     font-family: "Noto Sans", sans-serif;
+    scroll-behavior: smooth;
 }
 
 
 .wrap {
-    min-height: 100vh; /* Set a minimum height */
+    min-height: 100vh;  /* Set a minimum height */
+   
     display: flex;
     flex-direction: column;
-    position:relative;
+    position: relative;
 }
 
 .content {
@@ -40,6 +42,11 @@ body {
     top: 0;
     z-index: 100;
     width: 100%;
+}
+
+/* input outline basic style  */
+input {
+    outline: none;
 }
 
 .top-box {
@@ -62,11 +69,18 @@ body {
 
 
 .header-search input {
-    background-color: white;
     border: none;
     width: 300px;
     height: 30px;
     font-size: 12px;
+}
+
+.header-search :hover {
+    background-color: white;
+}
+
+.header-search :focus {
+    background-color: white;
 }
 
 .header-icons {
@@ -131,15 +145,16 @@ body {
     cursor: pointer;
 }
 
-/***** main page video *****/
+/***** main page background image *****/
 
-#main-video {
+#main-img {
     width: 100%;
     position: absolute;
     top: 40px;
     height: 100vh;
     object-fit: fill;
     z-index: -1;
+    filter: brightness(0.7);
 }
 
 .main-content {
@@ -200,7 +215,7 @@ body {
 
 #services {
     background-color: #FAF4EB;
-    padding: 30px 0px 80px 0px;
+    padding: 5rem;
     width: 100%;
     height: 60wh;
 }
@@ -272,7 +287,7 @@ video {
 #about {
     width: 100%;
     height: 60wh;
-    padding: 30px 0px 80px 0px;
+    padding: 5rem;
 }
 
 .about-figure {
@@ -370,9 +385,10 @@ video {
     border-width: 0px 0px 1px 0px;
     padding: 10px;
     font-size: 13px;
+    background-color: transparent;
 }
 
-.ebook-email input:active {
+.ebook-email input:focus {
     width: 100%;
     border-width: 0px 0px 1px 0px;
 }
@@ -386,6 +402,7 @@ video {
 }
 
 /* recipes section */
+/* USE FLEX */
 
 #recipes {
     background-color: #FAF4EB;
@@ -397,6 +414,8 @@ video {
 .recipes-wrap {
     height: 100%;
     width: 100%;
+    padding: 5rem;
+    text-align: center;
 }
 
 .recipes-wrap>div {
@@ -406,14 +425,15 @@ video {
     padding: 5px;
 }
 
-.recipes-wrap>div:nth-child(1)> div {
+.recipes-wrap>div:nth-child(1)>div {
     max-width: calc(50% - 1rem);
+    height: 500px;
     vertical-align: middle;
 }
 
 .recipes-wrap>div:nth-child(2)>div {
     max-width: calc(33.5% - 1rem);
-    height: 100%;
+    height: 500px;
     vertical-align: middle;
 }
 
@@ -427,7 +447,7 @@ video {
 video {
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
     cursor: pointer;
 }
 
@@ -486,13 +506,13 @@ footer {
     height: 500px;
     width: 100%;
     position: absolute;
-    top: 400vh;
+    top: 505vh;
 }
 
-#footer1{
+#footer1 {
     height: 50%;
     width: 100%;
-    top:0;
+    top: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -503,24 +523,24 @@ footer {
     background-size: cover;
 }
 
-#footer1 span{
+#footer1 span {
     flex: 1 1 30%;
     text-align: center;
 }
 
-#footer1 span a{
+#footer1 span a {
     color: white;
     text-decoration: none;
 }
 
-.footer-icons a img{
+.footer-icons a img {
     width: 20px;
     height: 20px;
     margin: 10px;
 }
 
 
-#footer2{
+#footer2 {
     display: flex;
     width: 100%;
     height: 50%;
@@ -531,11 +551,11 @@ footer {
     flex-wrap: wrap;
 }
 
-#footer2 div{
+#footer2 div {
     flex: 1 1 35%;
 }
 
-#footer2 > div:nth-child(1){
+#footer2>div:nth-child(1) {
     text-align: right;
     font-family: "Nanum Myeongjo", serif;
     font-weight: 700;
@@ -543,18 +563,22 @@ footer {
     font-size: 20px;
     letter-spacing: 2px;
     margin-right: 20px;
- }
+}
 
- #footer2 > div:nth-child(2) input{
-    width: 70%;
+#footer2>div:nth-child(2) input {
+    width: 500px;
     border-width: 0px 0px 1px 0px;
     padding: 5px;
     font-size: 12px;
     background-color: transparent;
     margin: 5px 0px;
- }
+}
 
- #footer2 > div:nth-child(2) button {
+#footer2>div:nth-child(2) input:focus{
+    border-width: 0px 0px 2px 0px;
+}
+
+#footer2>div:nth-child(2) button {
     background-color: transparent;
     border: 0;
     width: 100%;
@@ -564,14 +588,14 @@ footer {
     text-align: left;
 }
 
-#footer2 > div:nth-child(3){
+#footer2>div:nth-child(3) {
     text-align: center;
- }
+}
 
-#footer2 > div:nth-child(2) button:hover {
+#footer2>div:nth-child(2) button:hover {
     color: darkslategray;
 }
 
-#footer2 > div:nth-child(2) button:active {
+#footer2>div:nth-child(2) button:active {
     color: cornflowerblue;
 }

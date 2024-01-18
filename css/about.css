@@ -2,155 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,300&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Reset browser defaults */
-* {
-    margin: 0;
-    padding: 0;
-    /* This ensures padding and borders are included in the element's total width and height */
-}
-
-/* Set root styles */
-/* Overall styles */
-
-html,
-body {
-    margin: 0;
-    padding: 0;
-    font-size: 12px;
-    font-family: "Noto Sans", sans-serif;
-}
-
-.wrap {
-    min-height: 100vh; /* 최소 높이를 지정 */
-    display: flex;
-    flex-direction: column;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-}
-
-/* input outline basic style  */
-input {
-    outline: none;
-}
-
-/* FOR HEADER */
-
-.header {
-    position: fixed;
-    top: 0;
-    z-index: 100;
-    width: 100%;
-}
-
-.top-box {
-    height: 40px;
-    background-color: #FAF4EB;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-.header-search {
-    margin-left: 10px;
-}
-
-.header-search a img {
-    object-fit: cover;
-    width: 13px;
-    height: 13px;
-}
-
-.header-search input {
-    background-color: transparent;
-    border: none;
-    width: 300px;
-    height: 30px;
-    font-size: 12px;
-}
-
-.header-search :hover {
-    background-color: white;
-}
-
-.header-search :focus {
-    background-color: white;
-}
-
-.header-icons {
-    margin-right: 10px;
-}
-
-.header-icons a img {
-    width: 20px;
-    height: 20px;
-    margin: 10px;
-}
-
-.top-nav {
-    display: flex;
-    justify-content: space-between;
-    height: 60px;
-    align-items: center;
-    background: transparent;
-    vertical-align: baseline;
-    width: 100%;
-}
-
-.top-nav.active {
-    height: 60px;
-    background-color: rgba(255, 255, 255, 0.9);
-    color: black;
-}
-
-.top-nav.active a,
-.top-nav.active .logo {
-    color: black;
-}
-
-
-.menu {
-    width: 40%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.menu a {
-    justify-content: space-between;
-    cursor: pointer;
-    text-decoration: none;
-    color: #FAF4EB;
-}
-
-.menu a:hover {
-    /* color: #718293; */
-    color: #ccc;
-    transition: color 0.5s;
-}
-
-#nav-active{
-    color: cornflowerblue;
-}
-
-.logo {
-    width: 90px;
-    text-align: center;
-}
-
-.logo a{
-    font-size: 16pt;
-    font-weight: 400;
-    font-family: "Caprasimo", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: white;
-    text-decoration: none;
-}
-
-
 /* main content */
 
 h2 {
@@ -158,9 +9,29 @@ h2 {
     font-weight: 800;
     font-style: normal;
     font-size: 23px;
+    margin-bottom: 2rem;
 }
 
-.about-main {
+p {
+    font-size: 15px;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+.about-page-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* about section */
+
+#about {
     margin-top: 130px;
     padding: 5rem;
     height: 600px;
@@ -171,13 +42,7 @@ h2 {
     width: 48%;
 }
 
-#about-content p {
-    margin-top: 2rem;
-    font-size: 15px;
-    line-height: 2.5rem;
-}
-
-.about-main img{
+#about img{
     float: right;
     width: 48%;
     vertical-align: top;
@@ -187,98 +52,100 @@ h2 {
     object-position: right top;
 }
 
+/* information section */
 
-
-
-/* footer */
-footer {
-    margin-top: auto;
-    height: 500px;
-}
-
-#footer1 {
-    height: 50%;
-    width: 100%;
-    top: 0;
+#infomation{
+    background-color:#FAF4EB;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5rem 5rem;
     align-items: center;
-    align-content: stretch;
-    flex-wrap: wrap;
-    background-image: url(../assets/images/vegies-dark.jpg);
-    background-attachment: fixed;
-    background-size: cover;
 }
 
-#footer1 span {
-    flex: 1 1 30%;
-    text-align: center;
-}
-
-#footer1 span a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer-icons a img {
-    width: 20px;
-    height: 20px;
-    margin: 10px;
-}
-
-
-#footer2 {
-    display: flex;
-    width: 100%;
-    height: 50%;
-    background-color: #D8CEC0;
-    align-items: center;
-    position: relative;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-#footer2 div {
-    flex: 1 1 35%;
-}
-
-#footer2>div:nth-child(1) {
-    text-align: right;
-    font-family: "Nanum Myeongjo", serif;
-    font-weight: 700;
-    font-style: normal;
+#infomation h2{
     font-size: 20px;
-    letter-spacing: 2px;
-    margin-right: 20px;
+    text-align: center;
+    line-height: 2.5rem;
+    width: 700px;
+    margin-bottom: 50px;
 }
 
-#footer2>div:nth-child(2) input {
-    width: 70%;
-    border-width: 0px 0px 1px 0px;
-    padding: 5px;
-    font-size: 12px;
-    background-color: transparent;
-    margin: 5px 0px;
-}
-
-#footer2>div:nth-child(2) button {
-    background-color: transparent;
-    border: 0;
-    width: 100%;
-    cursor: pointer;
-    height: 10px;
-    font-size: 12px;
+#infomation-content{
+    float: right;
+    width: 50%;
     text-align: left;
 }
 
-#footer2>div:nth-child(3) {
+#infomation-content-img{
+    float: left;
+    width: 50%;
+    height: 70vh;
+    text-align: right;
+    display: flex;
+}
+
+#infomation-content-img img{
+    height: 100%;
+    width: 45%;
+    margin-left: 1rem;
+    object-fit: cover;
+}
+
+/* hire section */
+
+#hire{
     text-align: center;
+    padding: 5rem;
 }
 
-#footer2>div:nth-child(2) button:hover {
-    color: darkslategray;
+#hire-content{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    font-size: 17px;
 }
 
-#footer2>div:nth-child(2) button:active {
-    color: cornflowerblue;
+/* image section */
+#raspberries{
+    height: 500px;
+    object-fit: cover;
+    padding-top: 5rem;
 }
+
+/* press section */
+
+#press{
+    text-align: center;
+    padding: 10rem 5rem;
+}
+
+#press-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20%, auto));
+    grid-template-rows: 200px 200px 200px;
+    gap: 10rem 1rem;
+}
+
+.press-content-inside:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.press-content-inside > img{
+    object-fit: cover;
+}  
+
+.press-content-inside > p:nth-child(2){
+    text-align: left;
+    line-height: normal;
+    font-size: 14px;
+}   
+
+.press-content-inside > p:nth-child(3){
+    text-align: left;
+    line-height: normal;
+    font-size: 11px;
+    color: darkolivegreen;
+} 
