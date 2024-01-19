@@ -61,6 +61,10 @@ header {
     height: 13px;
 }
 
+.header-icons a img:hover {
+    opacity: 0.5;
+}
+
 .header-search input {
     background-color: transparent;
     border: none;
