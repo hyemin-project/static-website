@@ -4,7 +4,7 @@ This project showcases semantic HTML5, custom CSS, and ES6+ JavaScript.
 # Healthy Cooking Web page
 
 This project is a web application inspired by the design of [MIKAELA's page](https://www.mikaelareuben.com/). 
-The main focus is promoting healthy and delicious recipes.
+The main focus is promoting healthy and delicious recipes and someone's information.
 
 ## Technologies Used
 
