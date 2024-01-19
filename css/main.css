@@ -153,7 +153,7 @@ input {
     position: absolute;
     top: 40px;
     height: 100vh;
-    object-fit: fill;
+    object-fit: cover;
     z-index: -1;
     filter: brightness(0.7);
 }
