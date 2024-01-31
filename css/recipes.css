@@ -27,6 +27,35 @@ h2 {
     overflow: hidden;
 }
 
+
+@media screen and (max-width: 768px) {
+    .recipes-content {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .recipes-content-inside {
+      grid-column: 1 / 4;
+    }
+  
+    .recipes-content-inside > p {
+      font-size: 2rem;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .recipes-content {
+        grid-template-columns: repeat(auto-fill, minmax(30%, auto));
+    }
+  
+    .recipes-content-inside {
+      grid-column: 1 / 0;
+    }
+  
+    .recipes-content-inside > p {
+      font-size: 3rem;
+    }
+  }
+
 .recipes-content-inside {
     display: flex;
     flex-direction: column;
