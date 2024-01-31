@@ -1,0 +1,1 @@
+ErrorDocument http://localhost:5400/404.html

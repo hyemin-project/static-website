@@ -10,6 +10,8 @@
     /* This ensures padding and borders are included in the element's total width and height */
 }
 
+
+
 /* Set root styles */
 /* Overall styles */
 
@@ -23,8 +25,9 @@ body {
 
 
 .wrap {
-    min-height: 100vh;  /* Set a minimum height */
-   
+    min-height: 100vh;
+    /* Set a minimum height */
+
     display: flex;
     flex-direction: column;
     position: relative;
@@ -36,6 +39,7 @@ body {
 }
 
 /* FOR HEADER */
+
 
 header {
     position: fixed;
@@ -150,6 +154,39 @@ input {
     cursor: pointer;
 }
 
+.navbar__toggleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: var(--accent-color);
+}
+
+/* =============for mobile============== */
+@media screen and (max-width: 768px) {
+    .top-nav {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 8px 24px;
+    }
+    .menu {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+    }
+    .menu a {
+            width: 100%;
+            text-align: center;
+    }
+    .navbar__toggleBtn {
+             display: block;
+     }
+    .navbar__menu.active{
+            display: flex;
+    }
+}
+
 /***** main page background image *****/
 
 #main-img {
@@ -176,10 +213,109 @@ input {
 }
 
 #title {
-    font-size: 33px;
+    font-size: 57px;
     font-family: "Nanum Myeongjo", serif;
-    font-weight: 700;
     width: 100%;
+    text-align: center;
+    overflow: hidden;
+    color: #fff;
+    margin-top: 50px;
+}
+
+/*=========== animation of title ============ */
+
+
+.dropping-title {
+    height: 76px;
+    margin-bottom: -6px;
+    overflow: hidden;
+    position: relative;
+    font-weight: bold;
+}
+
+.dropping-title>div {
+    padding-bottom: 0;
+    animation: scroll 15s cubic-bezier(0.645, 0.045, 0.355, 1) infinite
+}
+
+
+@keyframes scroll {
+    0.0% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px)
+    }
+    3.7037037037037037% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px)
+    }
+    11.11111111111111% {
+        -webkit-transform: translateY(-66px);
+        transform: translateY(-66px)
+    }
+    14.814814814814815% {
+        -webkit-transform: translateY(-66px);
+        transform: translateY(-66px)
+    }
+    22.22222222222222% {
+        -webkit-transform: translateY(-132px);
+        transform: translateY(-132px)
+    }
+    25.925925925925927% {
+        -webkit-transform: translateY(-132px);
+        transform: translateY(-132px)
+    }
+    33.333333333333336% {
+        -webkit-transform: translateY(-198px);
+        transform: translateY(-198px)
+    }
+    37.03703703703704% {
+        -webkit-transform: translateY(-198px);
+        transform: translateY(-198px)
+    }
+    44.44444444444444% {
+        -webkit-transform: translateY(-264px);
+        transform: translateY(-264px)
+    }
+    48.148148148148145% {
+        -webkit-transform: translateY(-264px);
+        transform: translateY(-264px)
+    }
+    55.55555555555556% {
+        -webkit-transform: translateY(-330px);
+        transform: translateY(-330px)
+    }
+    59.25925925925926% {
+        -webkit-transform: translateY(-330px);
+        transform: translateY(-330px)
+    }
+    66.66666666666667% {
+        -webkit-transform: translateY(-396px);
+        transform: translateY(-396px)
+    }
+    70.37037037037037% {
+        -webkit-transform: translateY(-396px);
+        transform: translateY(-396px)
+    }
+    77.77777777777777% {
+        -webkit-transform: translateY(-462px);
+        transform: translateY(-462px)
+    }
+    81.48148148148148% {
+        -webkit-transform: translateY(-462px);
+        transform: translateY(-462px)
+    }
+    88.88888888888889% {
+        -webkit-transform: translateY(-528px);
+        transform: translateY(-528px)
+    }
+    92.5925925925926% {
+        -webkit-transform: translateY(-528px);
+        transform: translateY(-528px)
+    }
+    100.0% {
+        -webkit-transform: translateY(-594px);
+        transform: translateY(-594px)
+    }
 }
 
 #content-button {
@@ -579,7 +715,7 @@ footer {
     margin: 5px 0px;
 }
 
-#footer2>div:nth-child(2) input:focus{
+#footer2>div:nth-child(2) input:focus {
     border-width: 0px 0px 2px 0px;
 }
 

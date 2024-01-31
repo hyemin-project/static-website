@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/faq.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <title>FAQ</title>
+</head>
+
+<body>
+    <div class="wrap">
+
+        <header>
+            <div class="top-box">
+                <span class="header-search">
+                    <a href="#"><img src="../assets/icons/search.png" /></a>
+                    <input type="text" name="searchBox" placeholder=" SEARCH FOR RECIPES HERE">
+                </span>
+                <span class="header-icons">
+                    <a href="#"><img src="../assets/icons/shopping_basket.png" /><a>
+                    <a href="#"><img src="../assets/icons/facebook.png" /></a>
+                    <a href="#"><img src="../assets/icons/youtube.webp" /></a>
+                </span>
+            </div>
+            <div class="top-nav active">
+                <span class="menu">
+                    <a href="./about.html">ABOUT</a>
+                    <a href="./recipes.html">RECIPES</a>
+                    <a href="./cookbook.html">COOKBOOK</a>
+                </span>
+                <span class="logo"><a href="../index.html">Mikacla Reuben</a></span>
+                <span class="menu">
+                    <a href="./about.html#press">PRESS</a>
+                    <a href="#" id="nav-active">FAQ</a>
+                    <a href="./contact.html">CONTACT</a>
+                </span>
+            </div>
+        </header>
+
+        <div class="faq-title">
+            <h1>Welcome to Our <span>FAQ</span></h1>
+            <div>Explore the frequently asked questions below to find quick answers and helpful information about our services. If you can't find what you're looking for, feel free to contact us for further assistance.</div>    
+        </div>
+
+        <div class="faq-main">
+             <div class="container">
+                <ul class="accordion">
+                    <li class="item">
+                        <h2 class="accordion-title">What is the purpose of this service?<span class="icon"></span></h2>
+                        <div class="text">
+                            Our service aims to provide assistance across various fields, addressing user inquiries and offering information.
+                        </div>
+                    </li>
+                    <li class="item">
+                        <h2 class="accordion-title">Is there a fee for using the service?<span class="icon"></span></h2>
+                        <div class="text">
+                            No, currently, you can use this service free of charge.
+                        </div>
+                    </li>
+                    <li class="item">
+                        <h2 class="accordion-title">In what language should I ask my questions?<span class="icon"></span></h2>
+                        <div class="text">
+                            Please ask your questions in English for more accurate and prompt responses.
+                        </div>
+                    </li>
+                    <li class="item">
+                        <h2 class="accordion-title">How is the reliability of the answers ensured?<span class="icon"></span></h2>
+                        <div class="text">
+                            Answers are based on the latest information, and efforts are made to provide accurate content. However, we cannot guarantee the accuracy of all information.
+                        </div>
+                    </li>
+                    <li class="item">
+                        <h2 class="accordion-title">How is the privacy of personal information handled?<span class="icon"></span></h2>
+                        <div class="text">
+                            User privacy is protected, and service usage records are processed to make personal identification difficult. For more details, please refer to our Privacy Policy.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="faq-another">
+                <p>Still need help? Send us a note!</p>
+                <p>For any dother qeustions, please write us at</p>
+                <p>info@meee.studio or call us on +1 123 456 789</p>
+        </div>
+
+
+        <footer class="footer">
+            <div id="footer1">
+                <span><a href="./contact.html">CONTACT ></a></span>
+                <span><a href="./about.html">ABOUT MIKAELA ></a></span>
+                <span><a href="./contact.html">HIRE MIKAELA ></a></span>
+                <span class="footer-icons">
+                    <a href="#"><img src="../assets/icons/insta_white.png" /></a>
+                    <a href="#"><img src="../assets/icons/facebook_white.png" /></a>
+                    <a href="#"><img src="../assets/icons/youtube_white.png" /></a>
+                </span>
+            </div>
+            <div id="footer2">
+                <div>SIGN UP FOR OUR<br>NEWSLETTER</div>
+                <div>
+                    <div>Enter your email here*</div>
+                    <input type="email" name="email" placeholder="Your email">
+                    <button id="ebook-button">SUBSCRIBE</button>
+                </div>
+                <div>
+                    © 2020 By Mikaela Reuben. Proudly created with WIX.COM
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
+
+<script type="text/javascript">
+
+    // variables
+
+    const accordionBtn = document.querySelectorAll(".accordion-title");
+    const texts = document.querySelectorAll(".text");
+    const icons = document.querySelectorAll(".icon");
+
+    console.log(accordionBtn, texts, icons);
+
+    // event listener
+
+    accordionBtn.forEach(el => {
+        el.addEventListener("click", toogleAccordian);
+    });
+
+    // function
+
+    function toogleAccordian(el) {
+
+        const target = el.currentTarget;
+        const targetIcon = el.currentTarget.children[0];
+        const targetText = el.currentTarget.nextElementSibling;
+        console.log(targetText);
+        if (targetText.classList.contains("show")) {
+            targetText.classList.remove("show");
+            targetIcon.classList.remove("anime");
+            target.classList.remove("accordionTitleActive");
+        } else {
+            accordionBtn.forEach(el => {
+                el.classList.remove("accordionTitleActive");
+                texts.forEach(el => {
+                    el.classList.remove("show");
+                });
+                icons.forEach(el => {
+                    el.classList.remove("anime");
+                });
+            });
+            targetText.classList.add("show");
+
+            target.classList.add("accordionTitleActive");
+            targetIcon.classList.add("anime");
+        }
+    }
+</script>

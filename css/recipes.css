@@ -26,6 +26,7 @@ h2 {
     gap: 4rem 1rem;
     overflow: hidden;
 }
+
 .recipes-content-inside {
     display: flex;
     flex-direction: column;
