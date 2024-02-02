@@ -29,5 +29,5 @@ const toggleBtn = document.querySelector('.navbar__toggleBtn');
 const menu = document.querySelector('.menu');
 
 toggleBtn.addEventListener('click', () => {
-        menu.classList.toggle('active');
+        menu.classList.toggle('activeNav');
 });
