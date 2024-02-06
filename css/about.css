@@ -55,7 +55,7 @@ img{
 /* information section */
 
 #infomation{
-    background-color:#FAF4EB;
+    background-color:var(--content-bg-color);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
