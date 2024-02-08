@@ -18,24 +18,27 @@
                     <a href="#"><img src="../assets/icons/search.png" /></a>
                     <input type="text" name="searchBox" placeholder=" SEARCH FOR RECIPES HERE">
                 </span>
-                <span class="header-icons">
-                    <a href="#"><img src="../assets/icons/shopping_basket.png" /><a>
+                <label class="switch">
+                    <input id="switch" type="checkbox">
+                    <span class="slider"></span>
+                </label>
+                <!-- <span class="header-icons">
+                    <a href="#"><img src="../assets/icons/shopping_basket.png"/></a>
                     <a href="#"><img src="../assets/icons/facebook.png" /></a>
                     <a href="#"><img src="../assets/icons/youtube.webp" /></a>
-                </span>
+                </span> -->
             </div>
-            <div class="top-nav active">
-                <span class="menu">
-                    <a href="./about.html">ABOUT</a>
-                    <a href="./recipes.html">RECIPES</a>
-                    <a href="./cookbook.html">COOKBOOK</a>
-                </span>
-                <span class="logo"><a href="../index.html">Mikacla Reuben</a></span>
-                <span class="menu">
-                    <a href="./about.html#press">PRESS</a>
-                    <a href="./faq.html">FAQ</a>
-                    <a href="#" id="nav-active">CONTACT</a>
-                </span>
+            <div class="top-nav">
+                <ui class="menu active">
+                    <li class="yellow underline"><a href="./about.html">ABOUT</a></li>
+                    <li class="yellow underline"><a href="./recipes.html">RECIPES</a></li>
+                    <li class="yellow underline"><a href="./cookbook.html">COOKBOOK</a></li>
+                    <li><a href="../index.html"><span class="logo">Mikacla Reuben</span></a></li>
+                    <li class="yellow underline"><a href="./about.html#press">PRESS</a></li>
+                    <li class="yellow underline"><a href="./faq.html">FAQ</a></li>
+                    <li class="yellow underline"><a href="./contact.html">CONTACT</a></li>
+                </ui>
+                <a href="#" class="navbar__toggleBtn"> <img src="../assets/icons/menu.png"  width="30px" height="30px"></a>
             </div>
         </header>
 
@@ -95,5 +98,6 @@
         </footer>
 
     </div>
+    <script type="text/javascript" src="../pages.js"></script>
 </body>
 </html>

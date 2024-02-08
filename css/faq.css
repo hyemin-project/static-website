@@ -23,7 +23,7 @@ h1 {
     text-align: center;
     display: flex;
     flex-direction: column;
-    background-image: url('../assets/images/faq.jpg');
+    background-image: var(--filter-value), url('../assets/images/faq.jpg');
     object-fit: cover;
     background-attachment: fixed;
     align-items: center;

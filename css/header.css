@@ -5,16 +5,18 @@ html {
     --nav-bg-color:  rgba(255, 255, 255, 0.9);
     --bg-color: white;
     --content-bg-color: #FAF4EB;
+    --filter-value : linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) );
 }
 
 
 html[theme="dark-mode"] {
     
     --text-color: #eee;
-    --bg-color: rgba(20, 20, 20, 0.8);
+    --bg-color: rgba(20, 20, 20, 1);
     --top-bg-color : #393737;
     --nav-bg-color: rgba(18, 18, 18, 0.8);
     --content-bg-color: #393737;
+    --filter-value : linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6) );
 
 }
 

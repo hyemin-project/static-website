@@ -10,8 +10,6 @@
     /* This ensures padding and borders are included in the element's total width and height */
 }
 
-
-
 /* Set root styles */
 /* Overall styles */
 
@@ -190,8 +188,8 @@ input {
     align-content: center;
     display: flex;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 1.4rem;
-    font-weight: 700;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 
