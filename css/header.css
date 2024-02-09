@@ -295,7 +295,7 @@ header {
     }
 
     .underline.yellow {
-        background-image: linear-gradient(transparent 60%, #e72663 40%);
+        background-image: linear-gradient(transparent 60%, #D31753 40%);
     }
 
     .underline:hover {
