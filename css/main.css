@@ -234,7 +234,7 @@ input {
 
     .menu.activeNav {
         display: flex;
-        transform: translateY(100);
+        transform: translateY(100px);
         transition: transform 0.5s ease;
         text-align: center;
         color: black;
@@ -505,7 +505,7 @@ input {
     background-color: #FAF4EB;
     padding: 5rem;
     width: 100%;
-    height: 60wh;
+    height: 60vh;
 }
 
 
@@ -584,7 +584,7 @@ video {
 
 #about {
     width: 100%;
-    height: 60wh;
+    height: 60vh;
     padding: 5rem;
 }
 
@@ -744,7 +744,7 @@ video {
     background-color: #FAF4EB;
     padding: 30px 0px 80px 0px;
     width: 100%;
-    height: 60wh;
+    height: 60vh;
 }
 
 @media screen and (max-width: 768px) {
