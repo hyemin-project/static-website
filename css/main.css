@@ -451,7 +451,7 @@ input {
     }
 }
 
-#content-button {
+.content-button {
     color: #FAF4EB;
     background-color: transparent;
     width: 200px;
@@ -462,14 +462,14 @@ input {
 }
 
 
-#content-button:hover {
+.content-button:hover {
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.4) 0%, rgba(225, 255, 255, 0.2) 100%);
 }
 
 
 @media screen and (max-width: 768px) {
 
-    #content-button {
+    .content-button {
         color: #FAF4EB;
         background-color: transparent;
         width: 13rem;
@@ -729,7 +729,7 @@ video {
     border-width: 0px 0px 1px 0px;
 }
 
-#ebook-button {
+.ebook-button {
     background-color: transparent;
     border: 0;
     width: 100%;
