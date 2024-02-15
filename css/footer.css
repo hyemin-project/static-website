@@ -40,7 +40,7 @@ footer {
     display: flex;
     width: 100%;
     height: 50%;
-    background-color: #D8CEC0;
+    background-color: var(--content-bg-color);
     align-items: center;
     position: relative;
     justify-content: center;
