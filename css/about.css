@@ -149,3 +149,31 @@ img{
     font-size: 11px;
     color: darkolivegreen;
 } 
+
+/* =============for mobile============== */
+@media screen and (max-width: 768px) {
+
+    #about-content {
+        width: 100%;
+    }
+    
+    #about img{
+        display: none;
+    }
+
+    #infomation-content{
+        width: 100%;
+    }
+    
+    #infomation-content-img{
+        display: none;
+    }
+
+    #infomation h2{
+        font-size: 20px;
+        text-align: center;
+        line-height: 2.5rem;
+        width: 500px;
+        margin-bottom: 50px;
+    }
+}
